@@ -1,0 +1,372 @@
+*{  
+    box-sizing: border-box;
+}
+
+body{   
+    background-image: url("./images/puntitos.svg");
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+}
+.header{    
+    padding: 18px 19px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width:769px) {
+    .header{    
+        padding: 38px 50px 0;
+        
+    }
+}
+
+.logo-page{
+    width: 54px;
+    height: 50px;
+}
+
+@media (min-width:769px) {
+    .logo-page{ 
+        width: 85px;
+        height: 80px;
+    }
+}
+
+.burger{  
+    width: 36px;
+    height: 32px;
+}
+
+@media (min-width:769px) {
+    .burger{    
+        display: none;
+    }
+}
+
+.menu{  
+    display: none;
+}
+
+@media (min-width:769px) {
+    .menu{
+    list-style: none;
+    display: grid;
+    font-weight: 700;
+    font-size: 20px;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin: 0;
+    }
+}
+
+.quien-soy, .servicios, .escribime{ 
+    color: #141414;
+    text-decoration: none;
+}
+
+.first-section{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 27px;
+}
+
+@media (min-width:769px) {
+    .first-section{ 
+        flex-direction:inherit;
+        justify-content: space-between;
+        padding: 0 84px;
+    }
+}
+
+.title{ 
+    font-family: "Open Sans";
+    font-size: 47px;
+    margin: 61px 0;
+    text-align: center;
+
+}
+@media (min-width:769px) {
+    .title{ 
+        align-self: baseline;
+        margin-top: 130px;
+        max-width: 318px;
+        text-align: left;
+    }
+}
+
+.my-image{
+    margin-top: 40px;
+    width: 100%;
+    max-width: 318px;
+    height: 300px;
+}
+
+@media (min-width:769px) {
+   .my-image{   
+       margin-top: 15%;
+   }
+}
+
+.second-section{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 55px 30px;  
+    background-color: #141414;
+    color: #FAFAFA;
+}
+
+@media (min-width:769px) {
+    .second-section{    
+        flex-direction: row-reverse;
+        gap: 90px;
+        padding: 8% 18%;
+    }
+}
+
+.container-desktop{ 
+    text-align: center;
+}
+
+@media (min-width:769px) {
+    .container-desktop{ 
+        text-align: left;
+    }
+}
+
+.check{
+    width: 80px;
+    height: 80px;
+}
+
+@media (min-width:769px) {
+    .check{ 
+        width: 170px;
+        height: 170px;
+    }
+
+}
+.my-name{
+    font-family: "Open Sans";
+    font-size: 32px;
+    margin: 0;
+}
+
+.presentation{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 41px 0 57px;
+}
+
+@media (min-width:769px) {
+    .presentation{  
+        font-size: 90%;
+        max-width: 532px;
+    }
+}
+
+.third-section{ 
+    background-color: #FAFAFA;
+    display: grid;
+    justify-items: center;
+    padding: 66px 53px;
+}
+
+@media (min-width:769px) {
+    .third-section{ 
+        padding: 69px 25px 100px;
+    }
+}
+.container-services{
+    display: block;
+}
+
+@media (min-width:769px) {
+    .container-services{    
+     display: grid;
+     grid-template-columns: auto auto auto;
+     gap: 6%;
+ }
+}
+
+.my-services{   
+    font-family: "Open Sans";
+    font-size: 32px;
+    margin: 0 0 48px;
+}
+
+@media (min-width:769px) {
+    .my-services{   
+        font-size: 48px;
+    }
+}
+
+.desktop-third, .desktop-second{   
+    margin-top: 108px;
+}
+
+@media (min-width:769px) {
+    .desktop-first, .desktop-second, .desktop-third{    
+        margin-top: 75px;
+    }
+}
+
+.container-text-img{   
+    display: grid;
+    justify-items: center;
+}
+
+@media (min-width:769px) {
+    .container-text-img{  
+        text-align: center;
+    }
+}
+
+.subsubtitle{ 
+    font-size: 24px;
+    margin: 19px 0 15px;
+    font-weight: 700;
+}
+
+.paragraph{
+    font-size: 16px;
+    max-width: 400px;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+.fourth-section{
+    background-color: #141414;
+    color: #FAFAFA;
+    width: 100%;
+    padding: 65px 20px;
+}
+
+@media (min-width:769px) {
+    .fourth-section{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 271px 376px; 
+        gap: 50px;
+        padding: 116px;
+    }
+}
+
+.container-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-name, .container-email, .container-message, .container-button{  
+    width: 100%;
+    max-width: 400px;
+}
+.subtitle-form{ 
+    font-family: "Open Sans";
+    text-align: center;
+    margin: 0 0 36px;
+    font-size: 32px;
+}
+
+@media (min-width:769px) {
+    .subtitle-form{ 
+        font-size: 48px;
+    }
+}
+
+.your-name, .your-email, .your-message{ 
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin: 9px 0 25px;
+    outline: none;
+    max-width: 400px;
+}
+
+@media (min-width:769px) {
+    .your-name, .your-email, .your-message{ 
+        max-width: 450px;
+    }
+}
+
+.your-message{  
+    height: 113px;
+}
+
+.label-name, .label-email, .label-message{
+    font-size: 13px;
+}
+
+.button{    
+    background-color: #FFD953;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    height: 45px;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 35px;
+    max-width: 400px;
+}
+
+@media (min-width:769px) {
+    .button{    
+        max-width: 450px;
+    }
+}
+
+.footer{    
+    background-color: #DBDBDB;
+    padding: 53px 0 77px 20px;
+}
+
+@media (min-width: 769px) {
+    .footer{    
+        display: grid;
+        grid-template-columns: auto 265px;
+        background-color: #c4c4c487;
+        padding: 60px 0px 0px 60px;
+    }
+}
+
+.logo-page-footer{  
+    width: 77px;
+    height: 71px;
+}
+
+@media (min-width:769px) {
+    .logo-page-footer{  
+        width: 90px;
+        height: 85px;
+    }
+}
+
+.copyright{ 
+    margin: 18px 0 85px;
+}
+
+.text-instagram, .text-linkedin, .text-github{  
+    margin: 0;
+    color: #141414;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.logo-instagram, .logo-linkedin, .logo-github{
+    margin-bottom: 15px;
+}
+
+.instagram, .linkedin, .github{ 
+    display: grid;
+    gap: 5px;
+    grid-template-columns:  30px auto;
+    grid-template-rows: 33% 33% 33%;
+}
